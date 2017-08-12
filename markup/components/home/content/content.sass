@@ -28,6 +28,7 @@
     text-decoration: none
 
 .s-home-content__card_inner
+    max-height: 260px
     display: flex
     position: relative
     flex-direction: column
@@ -53,6 +54,13 @@
     height: 12.6vw
     z-index: 2
     display: block
+
+@media screen and (min-width: 1200px)
+    .s-home-content__card_title
+        font-size: 1.5em
+    .card-wrapper, .s-home-content__banner-scale
+        width: 490px !important
+        height: 670px !important
 
 .s-home-content__card_category
     color: #fff
