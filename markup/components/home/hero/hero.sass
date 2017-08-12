@@ -1,0 +1,193 @@
+.s-home-hero
+    display: flex
+    flex-direction: row
+    height: calc(100vh - 75px)
+    min-height: 600px
+    max-height: 800px
+
+.s-home-hero__intro
+    background: #fff
+    background-image: linear-gradient(#fff,#f7fbfb)
+    width: 38.18466354%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.s-home-hero__intro_content
+    max-width: 40rem
+    text-align: center
+
+.s-home-hero__intro_content-title
+    color: #5E3865
+    font-size: 3rem
+    margin-bottom: 40px
+
+.s-home-hero__intro_content-subtitle
+    font-size: 2.5rem
+    line-height: 1.26em
+    color: #4c2355
+    font-weight: 400
+    padding: 0 1rem
+    margin-bottom: 100px
+
+.s-home-hero__intro_content-links
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: center
+    li
+        padding: 0
+        margin: 0
+        display: block
+
+.s-home-hero__intro_content-links-link
+    font-size: 1.3em
+    letter-spacing: .04rem
+    text-transform: uppercase
+    font-weight: 500
+    text-decoration: none
+    color: #d83242
+    display: block
+    padding: 1em
+    transition: filter .2s cubic-bezier(.645,.045,.355,1)
+
+.s-home-hero__intro_content-links-link--oursource
+    padding-left: calc(1em + 11px + .7rem)
+    background-size: 11px 13px
+    background: url(/static/img/content/outsource.svg)
+    background-repeat: no-repeat
+    background-position: 1em calc(50% - 1px)
+    position: relative
+    &:hover
+        filter: brightness(40%)
+
+.s-home-hero__intro_content-links-link--systems
+    padding-left: calc(1em + 12px + .7rem)
+    background: url(/static/img/content/systems.svg)
+    background-size: 13px 13px
+    background-repeat: no-repeat
+    background-position: 1em calc(50% - 1px)
+    &:hover
+        filter: brightness(40%)
+
+.s-home-hero__banner
+    border-radius: 3px
+    background: linear-gradient(8.51deg, #21D4FD -0.76%, #B721FF 97.13%);
+    position: relative
+    overflow: hidden
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    align-items: center
+    &:before
+        content: ""
+        z-index: 3
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        width: 10px
+        pointer-events: none
+        background: linear-gradient(90deg,rgba(0,0,0,.02),transparent)
+
+.s-home-content__banner-scale
+    width: 380px
+    height: 520px
+    border-radius: 5px
+    margin: 20px
+
+.s-home-content__banner
+    border-radius: 3px
+    height: 100%
+    text-decoration: none
+    color: #fff
+    background: #F8F7FD
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.050385)
+    transition: transform .4s ease
+    box-shadow: 0 10px 25px 0 rgba(50,94,128,.2)
+
+.s-home-content__banner_link
+    text-decoration: none
+    
+.s-home-content__banner_link-active
+    transform: translateY(10px)
+    
+.s-home-hero__banner_link-container
+    transition: transform .8s ease
+
+.s-home-content__banner_inner
+    height: 470px
+    display: flex
+    position: relative
+    flex-direction: column
+    padding: 25px
+
+.s-home-content__banner_title
+    color: #373352
+    font-size: 22px
+    line-height: 1.2em
+    text-align: left
+    height: 62px
+    z-index: 2
+    display: block
+
+.s-home-content__banner_img-container
+    top: 17%
+    flex-grow: 1
+    left: -15px
+    bottom: 5%
+    position: absolute
+    right: 70px
+
+.s-home-content__banner_img-icon
+    width: 100%
+
+.s-home-hero__banner_link
+    font-size: 1.4rem
+    text-transform: uppercase
+    color: rgba(255, 255, 255, 0.6)
+    text-decoration: none
+    transition: color .5s ease
+    &:hover
+        color: rgba(255, 255, 255, 1)
+
+.s-home-content__banner-info
+    font-size: 12px
+    align-self: flex-end
+    line-height: 14px
+
+.s-home-content__banner-info-n
+    text-transform: uppercase
+    color: #4B4B4B
+    padding-bottom: 5px
+
+.s-home-content__banner-info-m
+    text-transform: uppercase
+    color: #CACACB
+
+.s-home-content__banner-info-y
+    color: #CACACB
+
+@media screen and (max-width: 776px)
+    .s-home-hero
+        flex-direction: column
+    .s-home-hero__intro
+        padding: 6.5rem 0 4.5rem
+        width: 100%
+        height: 100%
+    .s-home-hero__banner
+        min-height: 600px
+    .s-home-hero
+        display: block
+        height: auto
+        min-height: inherit
+        max-height: inherit
+      
+@media screen and (max-width: 465px)
+    .s-home-content__banner-scale
+        width: 83vw
+        height: 113vw

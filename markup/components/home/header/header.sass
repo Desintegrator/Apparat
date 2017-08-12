@@ -1,0 +1,157 @@
+.s-home-header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    background: none  
+    display: flex
+    align-items: center 
+
+.s-home-header__menu
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    padding-top: 15px
+
+.s-home-header__menu_item
+    text-transform: uppercase
+    color: #A2ACB0
+    font-size: 14px
+    padding: 5px 0 5px 30px
+    text-decoration: none
+    transition: opacity .2s ease
+    &:hover
+        opacity: .7
+
+.s-home-header__menu_mobile
+    display: none
+    flex-direction: column
+    width: 100%
+    padding-top: 18px
+    &.s-home-header__menu_mobile-opened
+        background-color: #fff
+        height: 50vh
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,.2)
+        animation: mobileMenuOpen .4s ease
+        z-index: 10
+        .s-home-header__menu_items-mobile
+            animation: mobileItemsOpen 0.4s ease
+
+.s-home-header__menu_mobile-closed
+    animation: mobileMenuClose .4s ease
+    .s-home-header__menu_items-mobile
+        animation: mobileItemsClose .4s ease
+
+@keyframes mobileItemsOpen
+    0%
+        opacity: 0
+        transform: translateY(-30px)
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@keyframes mobileItemsClose
+    0%
+        opacity: 1
+        transform: translateY(0)
+        z-index: 10
+    100%
+        opacity: 0
+        transform: translateY(-30px)
+        z-index: 10
+
+@keyframes mobileMenuOpen
+    0%
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,0)
+        height: 40vh
+    100%
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,.2)
+        height: 50vh
+
+@keyframes mobileMenuClose
+    0%
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,.2)
+        height: 50vh
+    100%
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,0)
+        height: 40vh
+
+.switchBtn
+    align-items: center
+    min-height: 20px
+    width: 22px
+    display: flex
+    margin-left: 20px
+    cursor: pointer
+
+.switcher
+    background-color: #191919
+    position: relative
+    width: 22px
+    height: 2px
+    &:before
+        content: ''
+        background-color: #191919
+        position: absolute
+        height: 2px
+        width: 22px
+        top: -7px
+    &:after
+        content: ''
+        background-color: #191919
+        position: absolute
+        height: 2px
+        width: 22px
+        bottom: -7px
+
+.switchBtn_active
+    .switcher
+        background: transparent
+        &:before
+            transform: rotate(45deg)
+            top: 0
+        &:after
+            transform: rotate(-45deg)
+            bottom: 0
+
+.s-home-header__menu_items-mobile
+    display: flex
+    z-index: -1000
+    width: 60%
+    height: 100%
+    margin: auto
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    padding-top: 40px
+    transition: all 2s ease
+
+.s-home-header__menu_item-mobile
+    font-weight: bold
+    color: #000
+    position: relative
+    line-height: 19px
+    font-size: 17px
+    text-transform: uppercase
+    text-decoration: none
+    padding: 25px 0
+    width: 100%
+    &:after
+        left: 0
+        bottom: -3px
+        position: absolute
+        content: ' '
+        width: 100%
+        height: 1px
+        background: #000
+        opacity: .1
+    &:last-child
+        &:after
+            opacity: 0
+
+@media screen and (max-width: 768px)
+    .s-home-header__menu
+        display: none
+    .s-home-header__menu_mobile
+        display: flex

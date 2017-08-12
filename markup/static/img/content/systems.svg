@@ -1,0 +1,18 @@
+<svg width="11" height="11" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Rectangle</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1116 -3254)">
+<g id="Rectangle">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1121.5 3254)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="matrix(0.707107 0.707107 -0.707107 0.707107 1121.5 3254)" fill="#D83142"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 7.77817 0L 7.77817 7.77817L 0 7.77817L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -1.5L -1.5 -1.5L -1.5 0L 0 0ZM 7.77817 0L 9.27817 0L 9.27817 -1.5L 7.77817 -1.5L 7.77817 0ZM 7.77817 7.77817L 7.77817 9.27817L 9.27817 9.27817L 9.27817 7.77817L 7.77817 7.77817ZM 0 7.77817L -1.5 7.77817L -1.5 9.27817L 0 9.27817L 0 7.77817ZM 0 1.5L 7.77817 1.5L 7.77817 -1.5L 0 -1.5L 0 1.5ZM 6.27817 0L 6.27817 7.77817L 9.27817 7.77817L 9.27817 0L 6.27817 0ZM 7.77817 6.27817L 0 6.27817L 0 9.27817L 7.77817 9.27817L 7.77817 6.27817ZM 1.5 7.77817L 1.5 0L -1.5 0L -1.5 7.77817L 1.5 7.77817Z"/>
+</defs>
+</svg>

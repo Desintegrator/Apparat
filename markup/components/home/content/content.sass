@@ -1,0 +1,108 @@
+.s-home-content
+    min-height: 220px
+    padding: 30px
+    background-color: #EFF7F8
+
+.s-home-content__intro
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-content: center
+    align-items: center
+    flex-wrap: wrap
+
+.s-home-content__card
+    margin: 20px
+    text-decoration: none
+    color: #fff
+    background: radial-gradient(232.50px at 0% 92.34%, #FBAB7E 0%, #F7CE68 100%)
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.050385)
+    transition: transform .4s ease
+   
+.s-home-content__card-scale
+    max-height: 350px
+    max-width: 268px
+    width: 20%
+
+.s-home-content__card_link
+    text-decoration: none
+
+.s-home-content__card_inner
+    display: flex
+    position: relative
+    flex-direction: column
+    padding: 12.5%
+    box-shadow: 0 10px 25px 0 rgba(50,94,128,.2)
+
+.s-home-content__card__card_icon-container
+    flex-grow: 1
+    left: 0
+    bottom: 35%
+    position: absolute
+    right: 0
+    padding-left: 12.5%
+
+.s-home-content__card__card_icon
+    width: 48%
+
+.s-home-content__card_title
+    color: #fff
+    font-size: 1.4vw
+    line-height: 1.2em
+    text-align: left
+    height: 12.6vw
+    z-index: 2
+    display: block
+
+.s-home-content__card_category
+    color: #fff
+    margin-top: 2.2vw
+    font-size: 1.3em
+    line-height: 1.4em
+    letter-spacing: .04rem
+    font-weight: 500
+    text-transform: uppercase
+    width: 100%
+    text-align: left
+
+.s-home-content__card_date
+    color: #705732
+    font-size: 1.3em
+    line-height: 1.4em
+    letter-spacing: .04rem
+    font-weight: 500
+    text-transform: uppercase
+    width: 100%
+    text-align: left
+
+.card-wrapper
+    perspective: 1000px
+    transform-style: preserve-3d
+
+.card-active
+    transition: transform .25s ease !important
+
+
+@media screen and (max-width: 900px)
+    .s-home-content__card-scale
+        width: 25%
+        &:last-child
+            display: none
+
+    .s-home-content__card_title
+        height: 15.2vw
+
+@media screen and (max-width: 776px)
+    .s-home-content__card-scale
+        width: 50%
+    
+    .s-home-content__card_title
+        height: 205px
+        font-size: 14px
+
+    .s-home-content__card__card_icon
+        width: 40%
+
+@media screen and (max-width: 665px)  
+    .s-home-content__card_title
+        height: 33vw
